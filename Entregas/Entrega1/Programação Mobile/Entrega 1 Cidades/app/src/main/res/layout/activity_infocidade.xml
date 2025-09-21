@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ImagemCidadeMenu"
+        android:layout_width="375dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="520dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.132"
+        app:srcCompat="@drawable/guarulhos" />
+
+    <TextView
+        android:id="@+id/tituloCidade6"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="9dp"
+        android:gravity="bottom"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <TextView
+        android:id="@+id/Descricaocidade"
+        android:layout_width="375dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="132dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemCidadeMenu" />
+
+    <TextView
+        android:id="@+id/IdadeCidade"
+        android:layout_width="187.5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/HabitantesCidades"
+        android:layout_width="187.5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="188dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemCidadeMenu" />
+
+    <TextView
+        android:id="@+id/TamanhoCidade"
+        android:layout_width="187.5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemCidadeMenu" />
+
+    <TextView
+        android:id="@+id/PibCidade"
+        android:layout_width="187.5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemCidadeMenu" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="375dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="29dp"
+        android:background="#48951F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

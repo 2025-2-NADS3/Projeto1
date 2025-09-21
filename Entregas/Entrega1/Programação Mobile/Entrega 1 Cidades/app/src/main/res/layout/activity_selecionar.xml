@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/botaoCidade"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="#892525"
+        android:backgroundTint="@color/black"
+        android:text="Detalhes"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ImagemCidadeMenu" />
+
+    <Button
+        android:id="@+id/botaoCidade2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="50dp"
+        android:background="#892525"
+        android:backgroundTint="@color/black"
+        android:text="Detalhes"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu2"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu2"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu2" />
+
+    <Button
+        android:id="@+id/botaoCidade3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="50dp"
+        android:background="#892525"
+        android:backgroundTint="@color/black"
+        android:text="Detalhes"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu3"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu3"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu3" />
+
+    <Button
+        android:id="@+id/botaoCidade4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="50dp"
+        android:background="#892525"
+        android:backgroundTint="@color/black"
+        android:text="Detalhes"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu4"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu4"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu4" />
+
+    <Button
+        android:id="@+id/botaoCidade5"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="46dp"
+        android:background="#892525"
+        android:backgroundTint="@color/black"
+        android:text="Detalhes"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu5"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu5"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu5" />
+
+    <Button
+        android:id="@+id/botaoCidade6"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="50dp"
+        android:background="#892525"
+        android:backgroundTint="@color/black"
+        android:text="Detalhes"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu6"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu6"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu6" />
+
+    <TextView
+        android:id="@+id/tituloCidade"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="59dp"
+        android:text="Guarulhos"
+        app:layout_constraintBottom_toBottomOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toTopOf="@+id/ImagemCidadeMenu" />
+
+    <TextView
+        android:id="@+id/tituloCidade2"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="59dp"
+        android:text="Guararema"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu2"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu2" />
+
+    <TextView
+        android:id="@+id/tituloCidade3"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="59dp"
+        android:text="Guarujá"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu3"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu3" />
+
+    <TextView
+        android:id="@+id/tituloCidade4"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="59dp"
+        android:text="São Paulo"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu4"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu4" />
+
+    <TextView
+        android:id="@+id/tituloCidade5"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="59dp"
+        android:text="Santos"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu5"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu5" />
+
+    <TextView
+        android:id="@+id/tituloCidade6"
+        android:layout_width="172dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="59dp"
+        android:text="Campinas"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidadeMenu6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagemCidadeMenu6"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidadeMenu6" />
+
+    <ImageView
+        android:id="@+id/ImagemCidadeMenu"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="250dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/guarulhos" />
+
+    <ImageView
+        android:id="@+id/imagemCidadeMenu2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintStart_toStartOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemCidadeMenu"
+        app:srcCompat="@drawable/guararema" />
+
+    <ImageView
+        android:id="@+id/imagemCidadeMenu3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imagemCidadeMenu2"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu2"
+        app:srcCompat="@drawable/guaruja" />
+
+    <ImageView
+        android:id="@+id/imagemCidadeMenu4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imagemCidadeMenu3"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu3"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu3"
+        app:srcCompat="@drawable/sp" />
+
+    <ImageView
+        android:id="@+id/imagemCidadeMenu5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imagemCidadeMenu4"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu4"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu4"
+        app:srcCompat="@drawable/santos" />
+
+    <ImageView
+        android:id="@+id/imagemCidadeMenu6"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/imagemCidadeMenu5"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu5"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu5"
+        app:srcCompat="@drawable/campinas" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="400dp"
+        android:layout_height="8dp"
+        android:background="#234E76"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="400dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="#234E76"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu5"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu5" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#234E76"
+        app:layout_constraintStart_toStartOf="@+id/ImagemCidadeMenu"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemCidadeMenu" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#234E76"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu2" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#234E76"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu3"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu3" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#234E76"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu4"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu4" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#234E76"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidadeMenu6"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeMenu6" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="210dp"
+        android:layout_height="43dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="bottom"
+        android:text="Cidades"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
