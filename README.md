@@ -17,13 +17,11 @@
 |----------------------|---------------------------------------------------------------------------|
 | Gustavo Roberto      | [LinkedIn](https://www.linkedin.com/in/gustavo-roberto-0aa488288/)        |
 | Gustavo Henrique     | [LinkedIn](https://www.linkedin.com/in/gustavo-henrique-da-silva-santos/) |
-| Lucas Alves          | [LinkedIn](https://www.linkedin.com/in/lucas-alves-bernardo-093871252/)   |
+| Lucas Bernardo       | [LinkedIn](https://www.linkedin.com/in/lucas-alves-bernardo-093871252/)   |
 | Luan Rocha           | [LinkedIn](https://www.linkedin.com/in/luanroccha13/)                     |
 
-## 👨‍🏫 Orientadores
+## 👨‍🏫 Orientador
 
-- [`Me. Francisco de Souza Escobar`](https://www.linkedin.com/in/francisco-escobar/)
-- [`Me. Aimar Martins Lopes`](https://www.linkedin.com/in/aimarlopes/)
 - [`Dr. Victor Rosetti de Quiroz`](https://www.linkedin.com/in/victorbarq/?originalSubdomain=br)
 
 ## 📝 Descrição do Projeto
