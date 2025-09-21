@@ -113,7 +113,7 @@ Projeto1/
 |------------------|-----------------------|-------------------------------------------------------------|
 | Gustavo Roberto  | Desenvolver o Dash    | Criar e organizar o README.md                               |
 | Gustavo Henrique | Desenvolver o App     |                                                             |
-| Lucas Alves      | Estrutura de Dados    | Arquitetura, otimizações e infraestrutura                   |
+| Lucas Bernardo   | Estrutura de Dados    | Arquitetura, otimizações e infraestrutura                   |
 | Luan Rocha       | Colaboração Geral     | Comunicação, testes, revisão e ajustes finais               |
 
 ## ⚙️ Como Executar o Projeto
