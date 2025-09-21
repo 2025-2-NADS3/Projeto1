@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>CADASTRO</title> 
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastre-se</h1>
+        <form id="signup-form">
+            <select id="tipo" required style="display:block; margin-bottom:10px;">
+                <option value="">Selecione o tipo</option>
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+                <option value="visitante">Visitante</option>
+            </select>
+
+            <input type="text" id="nome" placeholder="Nome" required style="display:block; margin-bottom:10px;">
+            <input type="email" id="email" placeholder="E-mail" required style="display:block; margin-bottom:10px;">
+            <input type="number" id="idade" placeholder="Idade" required style="display:block; margin-bottom:10px;">
+
+            <div id="ra-group" style="display:none; margin-bottom:10px;">
+                <input type="text" id="ra" placeholder="RA (somente para alunos)" style="display:block; margin-bottom:10px;">
+            </div>
+
+            <input type="password" id="senha" placeholder="Senha" required style="display:block; margin-bottom:10px;">
+            <input type="password" id="passwordagain" placeholder="Confirme sua senha" required style="display:block; margin-bottom:10px;">
+
+            <button type="submit" style="display:block; margin-top:10px;">Cadastrar</button>
+        </form>
+
+        <p id="fazer-login">Já tem uma conta? <a href="login.html">Fazer login</a></p>
+        <p id="voltar-index">Volte para a tela inicial <a href="index.html">Home</a></p>
+    </div>
+
+    <script>
+        // Exibir RA só quando o tipo for aluno
+        document.getElementById('tipo').addEventListener('change', function () {
+        const raGroup = document.getElementById('ra-group');
+        raGroup.style.display = this.value === 'aluno' ? 'block' : 'none';
+        });
+    </script>
+
+    <script src="../js/signup.js"></script> 
+</body>
+
+</html>
