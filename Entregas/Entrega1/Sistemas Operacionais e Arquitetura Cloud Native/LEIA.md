@@ -1,5 +1,5 @@
 # Explicação
-Como informado em sala de aula, o CRUD foi feito em JavaScript com servidor Node.js e MySQL Workbench/Server
+Como informado em sala de aula, o CRUD foi feito em JavaScript com servidor Node.js e MySQL Workbench/Server.
 
 ## Como rodar o projeto
 Para rodar o projeto, é necessário ter o Node.js e o MySQL Wokbench + Server baixados em seu computador.
