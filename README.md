@@ -23,6 +23,9 @@
 ## 👨‍🏫 Orientador
 
 - [`Dr. Victor Rosetti de Quiroz`](https://www.linkedin.com/in/victorbarq/?originalSubdomain=br)
+- [`Me. Francisco de Souza Escobar`](https://www.linkedin.com/in/francisco-escobar/)
+- [`Me. Aimar Martins Lopes`](https://www.linkedin.com/in/aimarlopes/)
+- [`Jefferson Silva`]()
 
 ## 📝 Descrição do Projeto
 
