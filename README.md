@@ -64,9 +64,9 @@ O aplicativo busca otimizar o processo de compra e atendimento na cantina, permi
 🛠️ ***Tecnologias utilizadas***
 
 ```
-Front-End: ?
-Back-End: ?
-Banco de Dados: ?
+Front-End: xml
+Back-End: java
+Banco de Dados: SupaBase
 ```
 
 ---
