@@ -1,0 +1,250 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Plano de fundo -->
+    <ImageView
+        android:id="@+id/fundoProduto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/produto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <!-- Botão de voltar para o menu de seleção -->
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="78dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/containerPrecoNota"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Voltar para o menu de seleção" />
+
+
+    <LinearLayout
+        android:id="@+id/containerPrecoNota"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMenu"
+        app:layout_constraintBottom_toTopOf="@+id/imgProduto">
+
+        <!-- Campo de exibição de preço -->
+        <TextView
+            android:id="@+id/valProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Preço"
+            android:fontFamily="@font/dosis"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:contentDescription="Preço do produto" />
+
+        <!-- Espaço expansivo -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Container da nota do produto -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Campo de exibição de nota -->
+            <TextView
+                android:id="@+id/notaProduto"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Nota"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/dosis"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:contentDescription="Nota do produto" />
+
+            <!-- Ícone de estreça -->
+            <ImageView
+                android:id="@+id/imgEstrela"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/estrela"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Mostrar a imagem do produto -->
+    <ImageView
+        android:id="@+id/imgProduto"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerPrecoNota"
+        app:layout_constraintBottom_toTopOf="@id/sobreProduto"
+        android:contentDescription="Imagem do produto" />
+
+    <!-- Container de infrmações sobre o produto -->
+    <LinearLayout
+        android:id="@+id/sobreProduto"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProduto">
+
+        <TextView
+            android:id="@+id/nomeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Nome"
+            android:gravity="center"
+            android:fontFamily="@font/dosis"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:contentDescription="Nome do produto" />
+
+        <TextView
+            android:id="@+id/descProduto"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:text="Descrição"
+            android:fontFamily="@font/dosis"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:contentDescription="Descrição do produto" />
+
+    </LinearLayout>
+
+
+    <!-- Container de quantidade do produto -->
+    <LinearLayout
+        android:id="@+id/qntContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/sobreProduto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Remover Produto -->
+        <FrameLayout
+            android:id="@+id/frameRemove"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+            <!-- Imagem do botão de remover -->
+            <ImageView
+                android:id="@+id/imgRemove"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btnremove" />
+
+            <!-- Botão de remover -->
+            <Button
+                android:id="@+id/btnRemove"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="Remover produto" />
+        </FrameLayout>
+
+        <!-- Espaço entre elementos -->
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="35dp" />
+
+        <!-- Mostrar a quantidade do produto -->
+        <TextView
+            android:id="@+id/qntProduto"
+            android:layout_width="68dp"
+            android:layout_height="35dp"
+            android:text="Qnt"
+            android:gravity="center"
+            android:fontFamily="@font/dosis"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:contentDescription="Quantidade do produto" />
+
+        <!-- Espaço entre os elementos -->
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="35dp" />
+
+        <!-- Adicionar produto -->
+        <FrameLayout
+            android:id="@+id/frameAdd"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+            <!-- Imagem do botão de adicionar -->
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btnadd" />
+
+            <!-- Botão de adicionar -->
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="Adicionar produto" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- Avaliar o produto -->
+
+
+    <!-- Botão de adicionar produto no carrinho -->
+    <Button
+        android:id="@+id/addCarrinho"
+        android:layout_width="372dp"
+        android:layout_height="58dp"
+        android:background="@drawable/btn_selector"
+        android:backgroundTint="@null"
+        android:contentDescription="Adicionar ao carrinho"
+        android:gravity="center"
+        android:text="Adicionar ao carrinho"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/fundoProduto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qntContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

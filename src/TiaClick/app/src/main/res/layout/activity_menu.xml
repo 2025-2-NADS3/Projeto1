@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="90dp"
+        app:layout_constraintBottom_toTopOf="@id/navegacao"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/comendoriatitulo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Promoções do dia"
+                android:textColor="@color/green"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/promocao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Categorias"
+                android:textColor="@color/green"
+                android:textSize="20dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/categoriaSalgados"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="150dp"
+                            android:layout_height="125dp">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/rounded_bg" />
+
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/salgados" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Salgados"
+                            android:textColor="@color/green"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/categoriaQueridinhos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="150dp"
+                            android:layout_height="125dp">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/rounded_bg" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/estrela" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Queridinhos"
+                            android:textColor="@color/green"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/categoriaSobremesas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="150dp"
+                            android:layout_height="125dp">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/rounded_bg" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/jarra" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Sobremesas"
+                            android:textColor="@color/green"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/categoriaBebidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="150dp"
+                            android:layout_height="125dp">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/rounded_bg" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="125dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/bebidas" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Bebidas Geladas"
+                            android:textColor="@color/green"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Para Você"
+                android:textColor="@color/green"
+                android:textSize="20dp" />
+
+            <!-- Todas as listas horizontais estão certas -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp">
+                    <!-- seus itens mantidos iguais -->
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:src="@drawable/donut" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="rosquinha"
+                            android:textColor="@color/verdeclaro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1.00R$"
+                            android:textColor="@color/green" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:src="@drawable/marmitinha" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Marmitinha"
+                            android:textColor="@color/verdeclaro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="18.00R$"
+                            android:textColor="@color/green" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:src="@drawable/carnelouca" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="pão C.C"
+                            android:textColor="@color/verdeclaro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="7.00R$"
+                            android:textColor="@color/green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:src="@drawable/paodequeijo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Pão de Q."
+                            android:textColor="@color/verdeclaro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="3.00R$"
+                            android:textColor="@color/green" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Peça Denovo!"
+                android:textColor="@color/green"
+                android:textSize="20dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- itens -->
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:src="@drawable/donut" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="rosquinha"
+                            android:textColor="@color/verdeclaro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1.00R$"
+                            android:textColor="@color/green" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Os Queridinhos da Tia!"
+                android:textColor="@color/green"
+                android:textSize="20dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- itens -->
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:src="@drawable/marmitinha" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Marmitinha"
+                            android:textColor="@color/verdeclaro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1.00R$"
+                            android:textColor="@color/green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:src="@drawable/carnelouca" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Pão C.C"
+                            android:textColor="@color/verdeclaro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1.00R$"
+                            android:textColor="@color/green" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/navegacao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Botão Home -->
+        <LinearLayout
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:src="@drawable/home"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Inicio"
+                android:textColor="@color/white"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+
+        <!-- Botão Perfil -->
+        <LinearLayout
+            android:id="@+id/botaoPedidos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/pedidos"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Pedidos"
+                android:textColor="@color/white"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

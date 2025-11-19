@@ -1,0 +1,9 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="luan">#D9D4C8</color>
+    <color name="green">#1F4733</color>
+    <color name="red">#FF0004</color>
+    <color name="fundo">#f5f0e8</color>
+    <color name="verdeclaro">#3C6E57</color>
+</resources>
